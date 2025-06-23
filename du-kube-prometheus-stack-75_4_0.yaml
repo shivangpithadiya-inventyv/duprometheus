@@ -695,6 +695,8 @@ alertmanager:
             auth_username: duprometheusalert@dynamic1001.com
             auth_password: DU_Prom@2021
             send_resolved: true
+    templates:
+    - '/etc/alertmanager/config/*.tmpl'
   ## Alertmanager configuration directives (as string type, preferred over the config hash map)
   ## stringConfig will be used only, if tplConfig is true
   ## ref: https://prometheus.io/docs/alerting/configuration/#configuration-file
